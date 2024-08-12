@@ -1,7 +1,7 @@
 //blueprint of original collection is models
 const mongoose = require("mongoose");
 const ProductSchema = new mongoose.Schema(
-    {
+{
   product_id: {
     type: Number,
     unique: true,
@@ -47,7 +47,7 @@ const ProductSchema = new mongoose.Schema(
     type: [String],
     required: [true, "colors is required"],
   },
-    }
+}
 );
 
 const ProductCollection = mongoose.model("products", ProductSchema); //to change schema to collection
