@@ -9,7 +9,7 @@ const connectDB=async(req,res)=>{
         //     message:'Database connected'
         // })
         console.log("Database is connected".bgGreen.white);
-
+    
     }catch(error){
         // res.status(504).send({
         //     message: `Internal Server Error ${error}`,
